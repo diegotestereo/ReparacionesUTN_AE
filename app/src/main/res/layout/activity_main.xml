@@ -1,0 +1,88 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.reparacionesutn.layouts.MainActivity"
+    tools:ignore="MergeRootFrame" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/blanco"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="121dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:padding="5dp"
+                android:textColor="@color/fondo_azul_obs"
+                android:text="Gestión de Reparaciones"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="2dp" >
+
+            <Button
+                android:id="@+id/Btn_Reparacion"
+                style="@style/estilo_botones"
+                android:text="Ingresar Reparacion" />
+
+            <Button
+                android:id="@+id/btn_VerReparaciones"
+                style="@style/estilo_botones"
+                android:text="Ver Reparaciones" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="2dp" >
+
+            <Button
+                android:id="@+id/btn_BuscarEquipo"
+                style="@style/estilo_botones"
+                android:text="Buscar Equipo" />
+
+            <EditText
+                android:id="@+id/eTxt_Serial"
+                android:layout_width="130dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:background="@drawable/fondo_edit_text"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Ingrese Serial"
+                android:inputType="number" >
+
+                <requestFocus />
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="2dp" >
+
+            <Button
+                android:id="@+id/btn_Spinners"
+                style="@style/estilo_botones"
+                android:text="Configuración" />
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>
